@@ -12,5 +12,6 @@ public interface ProductService {
 	ProductDto getProductById(Long id);
 	
 	List<ProductDto>getAllProducts();
+	List<ProductDto> filterByBrand(String brand); 
 
 }

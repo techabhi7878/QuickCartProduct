@@ -53,12 +53,14 @@ public class ProductController {
 	        return ResponseEntity.ok(productService.getProductById(id));
 	    }
 
-	    @GetMapping
+	    @GetMapping("/brand/{brand}")
 	    public ResponseEntity<List<ProductDto>> getAllProducts() {
 	        logger.info("Received request to fetch all products");
 	        return ResponseEntity.ok(productService.getAllProducts());
 	    }
       
+	    
+	    
 }
 
 
